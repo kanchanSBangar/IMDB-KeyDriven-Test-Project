@@ -105,11 +105,9 @@ public class SmokeTest {
     }
 
     @Test
-    public void Test1() throws Exception {
-        logger = extent.startTest("Test 1 : Verify that V1/INFO returns 200 OK response");
-        logger.log(LogStatus.INFO, "URI : ");
-        logger.log(LogStatus.INFO, "Step1 : GET INFO ");
-        logger.log(LogStatus.INFO, "Step2 : Verify response Code is 200 OK");
+    public void InsertMovieListDetails_in_DB() throws Exception {
+        logger = extent.startTest("Test 1 : Insert Movie list details in DB");
+        logger.log(LogStatus.INFO, "Navigate to IMDB site");       
 
 
         String sPath = System.getProperty("user.dir") + "/testData/testData.xlsx";
