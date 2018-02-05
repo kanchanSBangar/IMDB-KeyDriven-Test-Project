@@ -25,7 +25,7 @@ public class ActionKeywords {
 
     public ActionKeywords() {
         try {
-            inputStream = new FileInputStream("D:\\intellij\\IMDBassignment\\src\\main\\resources\\PageObject.properties");
+            inputStream = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\resources\\PageObject.properties");
             properties.load(inputStream);
         } catch (Exception e) {
             e.printStackTrace();

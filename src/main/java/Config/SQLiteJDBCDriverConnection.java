@@ -80,9 +80,9 @@ public class SQLiteJDBCDriverConnection {
     }
 
 
-    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+   /* public static void main(String[] args) throws ClassNotFoundException, SQLException {
         connect();
         readData();
         conn.close();
-    }
+    }*/
 }
